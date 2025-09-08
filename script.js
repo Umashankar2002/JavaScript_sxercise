@@ -138,10 +138,12 @@ function reverse_string(event) {
 document.getElementById("longest-word").addEventListener("submit",find_longest_word);
 const longest_word_string_error = document.getElementById("longest-word-string-error");
 const longest_word_result = document.getElementById("longest-word-result");
+const longest_word_error = document.getElementById("longest-word-error");
 
 // Validates the String input field
 function check_longest_word_string(event) {
     longest_word_result.innerText = "";
+    longest_word_error.innerText = "";
     if (event.target.value.trim() === "") {
         longest_word_string_error.innerText = "Invalid input";
         return;
@@ -170,6 +172,11 @@ function find_longest_word(event) {
     let longest_word = "";
     // finding large word
     for (const word of words) {
+        if(word.trim().length > 20)
+        {
+            longest_word_error.innerText = "The word must not exceed 20 characters";
+            return;
+        }
         if (longest_word.length < word.trim().length) {
             longest_word = word.trim();
         }
