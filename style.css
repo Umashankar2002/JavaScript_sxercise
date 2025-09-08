@@ -1,0 +1,224 @@
+/* =================================
+   section: Global reset
+   ================================= */
+body{
+    margin: 20px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+#main-div
+{
+    max-width: 1000px;
+    letter-spacing: 0.5px;
+    margin: 0 auto;
+}
+
+/* =================================
+   section: Header style
+   ================================= */
+#mypage-header{
+    min-height: 100px;
+    color: white;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6e6e68;
+}
+
+/* =================================
+   section: Center page style
+   ================================= */
+#mypage-body{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: lightgray;
+    padding: 20px 20px 20px 10px;
+}
+.mypage-content{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+}
+/* =================================
+   section: Left navigation style
+   ================================= */
+.mypage-leftnav{
+    border-left: #6e6e68 solid 1px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.leftnav-names{
+    text-align: center;
+}
+
+/* ===================================
+   section: center content page style
+   =================================== */
+.center-content{
+    padding-left: 25px;
+}
+.mypage-center-content{
+    border-right: #6e6e68 solid 1px;
+    flex: 3;
+    display: flex;
+    flex-wrap: wrap;
+    word-wrap: break-word;
+    align-items: center;
+    line-height: 1.6;
+    padding:10px 20px;
+}
+
+/* =================================
+   section: Footer style
+   ================================= */
+#mypage-footer{
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    color: white;
+    background-color: #6e6e68;
+}
+#footer-title{
+    font-weight: 600;
+    font-size: large;
+    margin-top: 12px;
+}
+#footer-body{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.footer-content{
+    display: flex;
+    gap: 15px;
+}
+
+   /* =================================
+   container section
+   ================================= */
+#js-wrapper{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+ /* =================================
+  javascript section
+   ================================= */
+.title{
+    text-align: center;
+}
+#max-container{
+    border: #6e6e68 solid 3px;
+    background-color: lightgray;
+    padding: 30px;
+    border-radius: 10px;
+    width: 350px;
+    
+}
+#max, #stringreverse, #longest-word, #cookies{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.form-group{
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.lebel-data, #button{
+    font-weight: 600;
+}
+
+.input-field{
+    padding: 10px;
+    border-radius: 3px;
+    border: solid 1px black;
+}
+.button{
+    width: 100%;
+    padding: 10px;
+    background-color: #6e6e68;
+    border: solid 1px lightgray;
+    color: white;
+    border-radius: 3px;
+}
+#num1-error, #num2-error, #string-error, #longest-word-string-error, #name-error, #phone-error{
+    color: red;
+    font-size: small;
+    font-weight: 400;
+}
+#error-max, #global-error, #stringreverse-error{
+    color: red;
+    font-size: large;
+    display: flex;
+    flex-wrap: wrap;
+}
+#message-container, #global-error{
+    display: flex;
+    justify-content: center;
+}
+#max-value, #stringreverse-result, #longest-word-result{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* =================================
+   section: Responsive page style
+   ================================= */
+@media (max-width: 576px) {
+    
+    /* =================================
+   section: Header style
+   ================================= */
+    #header-name{
+        font-size: 26px;
+    }
+
+    /* =================================
+   section: Center page style
+   ================================= */
+    .mypage-content{
+        flex-direction: column;
+    }
+    .mypage-center-content{
+        border-right: none;
+        font-size: small;
+    }
+    .mypage-leftnav{
+        border-left: none;
+    }
+    .leftnav-names{
+        font-size: 20px;
+    }
+    .center-content-headers{
+        font-size: 15px; 
+    }
+
+    /* =================================
+    JavaScript
+
+    max container section
+    ================================= */
+   #max-container{
+    max-width: 200px;
+    padding: 25px;
+   }
+
+   #logest_word_button{
+    margin-top: 18px;
+   }
+}
