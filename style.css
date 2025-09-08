@@ -155,11 +155,13 @@ body{
     border: solid 1px lightgray;
     color: white;
     border-radius: 3px;
+    cursor: pointer;
 }
 #num1-error, #num2-error, #string-error, #longest-word-string-error, #name-error, #phone-error{
     color: red;
     font-size: small;
     font-weight: 400;
+    margin-top: -5px;
 }
 #error-max, #global-error, #stringreverse-error{
     color: red;
@@ -167,13 +169,20 @@ body{
     display: flex;
     flex-wrap: wrap;
 }
+.require-symbol{
+    color: red;
+}
 #message-container, #global-error{
     display: flex;
     justify-content: center;
 }
-#max-value, #stringreverse-result, #longest-word-result{
+#max-value, #stringreverse-result, #longest-word-result,#cookie-result{
     font-weight: bold;
     font-size: 18px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start; 
+    word-break: break-word;
 }
 
 /* =================================

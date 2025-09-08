@@ -44,8 +44,8 @@ function num2_input_data(event) {
 // finding the max value
 function find_max(event) {
     event.preventDefault();
-    const num1 = parseInt(document.getElementById("num1").value.trim());
-    const num2 = parseInt(document.getElementById("num2").value.trim());
+    const num1 = parseInt(document.getElementById("max-num1").value.trim());
+    const num2 = parseInt(document.getElementById("max-num2").value.trim());
 
     error.innerText = "";
     max_value.innerText = "";
@@ -246,9 +246,9 @@ function set_cookies(event) {
         return;
     }
     
-    document.cookie = "name=" + encodeURIComponent(name);
-    document.cookie = "phone=" + encodeURIComponent(phone);
-    console.log(document.cookie);
+    document.cookie = `name=${encodeURIComponent(name)}`;
+    document.cookie = `phone=${encodeURIComponent(phone)}`;
+    document.getElementById("cookie-result").innerText = "Data saved";
 }
 
 // getting the values from cookie
@@ -258,11 +258,11 @@ function load_cookie_details() {
     const phone = document.getElementById("footer-phone");
 
     for (const cookie of cookies) {
-        const [key, value] = cookie.split("=");
+        const [key, value] = cookie.split("=").map(c => c.trim());
         if (key === "name") {
             name.innerText = decodeURIComponent(value);
         }
-        else if (key === " phone") {
+        else if (key === "phone") {
             phone.innerText = decodeURIComponent(value);
         }
     }

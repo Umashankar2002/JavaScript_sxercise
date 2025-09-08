@@ -105,17 +105,17 @@
             <div>
                 <h2 class="title">Find Max Number</h2>
                 <div id="max-container">
-                    <form method="post" id="max">
+                    <form id="max">
                         
                         <div class="form-group">
-                            <label for="num1" class="lebel-data">Number 1:</label>
-                            <input type="number" id="num1" placeholder="Enter the number" class="input-field" onkeyup="num1_input_data(event)">
+                            <label for="max-num1" class="lebel-data">Number 1:<span class="require-symbol">*</span></label>
+                            <input type="number" id="max-num1" placeholder="Enter the number" class="input-field" onkeyup="num1_input_data(event)">
                             <span id="num1-error"></span>
                         </div>
                     
                         <div class="form-group">
-                            <label for="num2" class="lebel-data">Number 2:</label>
-                            <input type="number" id="num2" placeholder="Enter the number" class="input-field" onkeyup="num2_input_data(event)">
+                            <label for="max-num2" class="lebel-data">Number 2:<span class="require-symbol">*</span></label>
+                            <input type="number" id="max-num2" placeholder="Enter the number" class="input-field" onkeyup="num2_input_data(event)">
                             <span id="num2-error"></span>
                         </div>
                 
@@ -134,10 +134,10 @@
             <div>
                 <h2 class="title">Reverse a String</h2>
                 <div id="max-container">
-                    <form method="post" id="stringreverse">
+                    <form id="stringreverse">
                         
                         <div class="form-group">
-                            <label for="stringInput" class="lebel-data">Enter a string:</label>
+                            <label for="stringInput" class="lebel-data">Enter a string:<span class="require-symbol">*</span></label>
                             <input type="text" id="stringInput" placeholder="Enter a string" class="input-field" onkeyup="string_input_data(event)">
                             <span id="string-error"></span>
                         </div>
@@ -157,10 +157,10 @@
             <div>
                 <h2 class="title">Find Longest Word</h2>
                 <div id="max-container">
-                    <form method="post" id="longest-word">
+                    <form id="longest-word">
                         
                         <div class="form-group">
-                            <label for="input-string" class="lebel-data">Enter comma-separated words:</label>
+                            <label for="input-string" class="lebel-data">Enter comma-separated words:<span class="require-symbol">*</span></label>
                             <input type="text" id="input-string" placeholder="Ex: uma,shankar,lokesh" class="input-field" onkeyup="check_longest_word_string(event)">
                             <span id="longest-word-string-error"></span>
                         </div>
@@ -180,16 +180,16 @@
             <div>
                 <h2 class="title">Cookies</h2>
                 <div id="max-container">
-                    <form method="post" id="cookies">
+                    <form id="cookies">
                         
                         <div class="form-group">
-                            <label for="name" class="lebel-data">Name:</label>
+                            <label for="name" class="lebel-data">Name:<span class="require-symbol">*</span></label>
                             <input type="text" id="name" placeholder="Enter the name" class="input-field" onkeyup="cookie_name_input_data(event)">
                             <span id="name-error"></span>
                         </div>
                     
                         <div class="form-group">
-                            <label for="phone" class="lebel-data">Phone:</label>
+                            <label for="phone" class="lebel-data">Phone:<span class="require-symbol">*</span></label>
                             <input type="tel" id="phone" placeholder="Enter the Phone number" class="input-field" onkeyup="cookie_phone_input_data(event)">
                             <span id="phone-error"></span>
                         </div>
@@ -197,6 +197,7 @@
                         <button type="submit" class="button">Find Max</button>
                         <div id="message-container">
                             <span id="global-error"></span>
+                            <span id="cookie-result"></span>
                         </div>
                     </form>
                 </div>
